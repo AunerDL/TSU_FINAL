@@ -1,0 +1,75 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+3
+2
+v1
+3
+0.0
+2
+v2
+3
+0.0
+2
+v3
+3
+0.0
+6
+2
+1
+d
+3
+0.0
+1
+t
+3
+0.0
+4
+1
+38
+'Introduce el valor de la velocidad 1'
+5
+1
+2
+v1
+4
+1
+34
+'Ingresar el valor de velocidad 2'
+5
+1
+2
+v2
+4
+1
+23
+'Ingresar la distancia'
+5
+1
+1
+d
+6
+1
+2
+v3
+5
+v2-v1
+4
+1
+38
+'La diferencia de velocidades es: ',v3
+6
+1
+1
+t
+4
+v3/d
+4
+1
+18
+'El tiempo es: ',t
+1
