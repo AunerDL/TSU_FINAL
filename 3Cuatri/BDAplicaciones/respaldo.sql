@@ -1,0 +1,8 @@
+--selectcionar la base de datos
+--clik derecho y en taks y en back up
+--al abrir la pestaña y despues darle ok
+--despues borrar la base de datos
+--para restaurar es dar click derecho y restore database
+--le das en device y despues le das en los tres puntos
+--y al final en add y escojes la base de datos
+--y le das ok
