@@ -1,0 +1,36 @@
+{
+    "Cabecera":{
+        "Titulo": "Menú",
+        "Subtitulo": "de navegacion"
+    },
+    "Navegador": {
+        "Inicio": "Inicio",
+        "Yo": "Yo",
+        "Mas": "Mas de mi",
+        "Progra": "Programacion",
+        "Proyectos": "Mis proyectos",
+        "Carpetas": "Carpetas"
+    },
+    "BotonesNavegador": {
+        "Idiomas": "Ingles",
+        "Colores": "Modo Oscuro"
+    },
+
+    "Presentacion":{
+        "SoyYo": "Yo soy Gabriel Edurado y este soy Yo"
+    },
+
+    "Inicio": {
+        "text1":"Soy estudiante en tecnologias de la informacion en desarrollo de software se trabajar en back-end y un poco en frond-end, so habil en resolver problemas implementando tecnicas de trabajo en equipo y tambien en mejorar aplicaciones",
+        "text2": "Me especialice en .Net en donde use y aprendi como hacer servicios web, conectar servicios API con bases de datos por ejemplo: firebase, mongoDB y SQL Server, tambien en back-end aprendi a aplicar y manipilar la estructura de datos usando tipos de datos abstractos y TDA, usando los metodos de recursividad, Usando arreglos (Vectores y Matrices), al igual con listas enlazadas orientado a objetos."
+    },
+
+    "CarpetasGit": {
+        "titulo": "Para mas informacion de mis proyectos puede consultar en github en el siguiente enlace"
+    },
+
+    "Botones":{
+        "Boton1": "Iniciar",
+        "Boton2": "Siguiente"
+    }
+}

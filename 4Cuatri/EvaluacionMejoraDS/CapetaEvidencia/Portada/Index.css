@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+/* father */
+.Container{
+      background-image: url(sours/Img/codigos.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      justify-content: center;
+      display: flex;
+}
+      
+      /* Soon */
+      .circle {
+            border-radius: 50%;
+            border: 2px solid #00ffff;
+            overflow: hidden;
+            display: block;
+            --glow-color: #00ffff;
+            --glow-spread-color: #36C9C6;
+            --enhanced-glow-color: #65C8D0;
+            box-shadow: 0 0 1em .25em var(--glow-color),
+                  inset 0 0 .75em .25em var(--glow-color);
+      }
+
+/* father */
+#Margin{
+      --glow-color: #00ffff;
+      --glow-spread-color: #36C9C6;
+      --enhanced-glow-color: #65C8D0;
+      color: var(--glow-color);
+      outline: none;
+      box-shadow: 0 0 1em .25em var(--glow-color),
+            inset 0 0 .75em .25em var(--glow-color);
+      border-radius: 1em;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+}
+
+      /* Soon */
+      .text {
+            --glow-color: #1792A4;
+            color: var(--glow-color);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+              'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      /* Soon of the soon */
+      button {
+            margin-top: 50px;
+            --glow-color: #00ffff;
+            --glow-spread-color: #36C9C6;
+            --enhanced-glow-color: #65C8D0;
+            --btn-color: #1792A4;
+            border: .25em solid var(--glow-color);
+            padding: 1em 3em;
+            color: var(--glow-color);
+            font-weight: bold;
+            background-color: var(--btn-color);
+            border-radius: 1em;
+            outline: none;
+            box-shadow: 0 0 1em .25em var(--glow-color),
+                  0 0 4em 1em var(--glow-spread-color),
+                  inset 0 0 .75em .25em var(--glow-color);
+            text-shadow: 0 0 .5em var(--glow-color);
+            position: relative;
+            transition: all 0.3s;
+      }
+
+            /* Soon of the soon of botton */
+            button:hover {
+                  color: var(--btn-color);
+                  background-color: var(--glow-color);
+                  box-shadow: 0 0 1em .25em var(--glow-color),0 0 4em 2em var(--glow-spread-color),inset 0 0 .75em .25em var(--glow-color);
+            }
+
+            /* Soon of the soon of botton */
+            button:active {
+                  box-shadow: 0 0 0.6em .25em var(--glow-color),0 0 2.5em 2em var(--glow-spread-color),inset 0 0 .5em .25em var(--glow-color);
+            }
+
+
+/* Responsive */
+@media (max-width: 1440px) {
+      .Container {
+            height: 300px;
+            padding-top: 50px;
+          }
+        
+          .circle {
+            width: 345px;
+            height: 345px;
+          }
+        
+          #Margin {
+            margin: 100px;
+            height: 350px;
+            width: 1200px;
+            font-size: 30px;
+          }
+        
+          .text {
+            font-size: 35px;
+          }
+        
+          button {
+            margin-top: 100px;
+            padding: 2em 4em;
+            font-size: 20px;
+          }
+}
+@media (max-width: 320px) and (max-width: 1440px) {
+          .Container {
+            height: 200px;
+            padding-top: 50px;
+          }
+        
+          .circle {
+            width: 200px;
+            height: 200px;
+          }
+        
+          #Margin {
+            margin: 30px;
+            height: 440px;
+            width: 600px;
+            font-size: 20px;
+          }
+        
+          .text {
+            font-size: 15px;
+          }
+        
+          button {
+            margin-top: 50px;
+            padding: 1em 2em;
+            font-size: 15px;
+          }
+}
+@media (max-width: 320px) {
+      .Container {
+            height: 250px;
+            padding-top: 100px;
+          }
+        
+          .circle {
+            width: 170px;
+            height: 170px;
+          }
+        
+          #Margin {
+            margin: 30px;
+            height: 440px;
+            width: 300px;
+            font-size: 20px;
+          }
+        
+          .text {
+            font-size: 8px;
+          }
+        
+          button {
+            margin-top: 50px;
+            padding: 1em 2em;
+            font-size:8px;
+          }  
+}

@@ -1,0 +1,43 @@
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow:inherit;
+    background-color: #333;
+}
+ul li{
+    float:left;
+    border-right: 1px solid #bbb;
+}
+ul li:last-child{
+    border-right: none;
+}
+
+ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover:not(.active){
+   
+    border: 1px solid white;
+    color: white;
+}
+
+.active{
+    background-color: #04aa6d;
+}
+
+#perfil{
+    float: right;
+}
+#todo{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

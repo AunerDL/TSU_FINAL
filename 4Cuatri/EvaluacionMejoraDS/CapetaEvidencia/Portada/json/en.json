@@ -1,0 +1,38 @@
+{
+    "Cabecera":{
+        "Titulo": "Browser",
+        "Subtitulo": "menu"
+    },
+    "Navegador": {
+        "Inicio": "Start",
+        "Yo": "I am",
+        "Mas": "More from me",
+        "Progra": "Programming",
+        "Proyectos": "My projects",
+        "Carpetas": "Folders"
+    },
+    "BotonesNavegador": {
+        "Idiomas": "English",
+        "Colores": "Dark mode"
+    },
+
+    "Presentacion":{
+        "SoyYo": "I am Gabriel Edurado and this is me"
+    },
+
+    "Inicio":{
+        "text1": "I am a student in information technology in software development, I know how to work in back-end and a little bit in front-end, I am skilled in solving problems by implementing teamwork techniques and also in improving applications.",
+
+        "text2": "I specialized in .Net where I used and learned how to make web services, connect API services with databases for example: firebase, mongoDB and SQL Server, also in back-end I learned how to apply and manipulate data structure using abstract data types and TDA, using recursion methods, using arrays (Vectors and Matrices), as well as object oriented linked lists."
+
+    },    
+    
+    "CarpetasGit":{
+        "titulo" :"For more information about my projects you can consult my github at the following link"
+    },
+
+    "Botones":{
+        "Boton1": "Start",
+        "Boton2": "Next"
+    }
+}

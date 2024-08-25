@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:src="@drawable/usuario"
+        android:onClick="onToggle" />
+    <Button
+        android:id="@+id/imageTextButton1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/usuario"
+        android:text="Android"/>
+    <Button
+        android:id="@+id/imageTextButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:drawableLeft="@drawable/usuario"
+        android:text="Android"/>
+    <Button
+        android:id="@+id/imageTextButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:drawableRight="@drawable/usuario"
+        android:text="Android"/>
+    <Button
+        android:id="@+id/imageTextButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/usuario"
+        android:text="Android"/>
+
+    <Button
+        android:id="@+id/imageTextButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
+        android:drawableLeft="@drawable/usuario"
+        android:drawableTop="@drawable/usuario"
+        android:drawableRight="@drawable/usuario"
+        android:drawableBottom="@drawable/usuario"
+        android:text="Android" />
+    <Button
+        android:id="@+id/imageTextButton6"
+        android:layout_width="111dp"
+        android:layout_height="75dp" />
+
+    <Button
+        android:id="@+id/btnSalir2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir" />
+
+</LinearLayout>

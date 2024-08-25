@@ -1,0 +1,59 @@
+/* Ejemplo de cambios para hacer el diseño más responsive */
+
+/* Estilos para tamaños de pantalla más pequeños */
+@media screen and (max-width: 768px) {
+    /* Aquí defines los estilos que se aplicarán en pantallas de hasta 768px */
+    /* Por ejemplo, podrías cambiar el ancho del sidebar o ajustar el tamaño de las fuentes */
+    .sidebar {
+      width: 250px; /* Cambia el ancho del sidebar */
+    }
+    
+    .text.nav-text {
+      font-size: 14px; /* Ajusta el tamaño del texto en el menú */
+    }
+    
+    /* Otros ajustes necesarios */
+  }
+  
+  /* Estilos para tamaños de pantalla más pequeños aún */
+  @media screen and (max-width: 480px) {
+    /* Aquí defines los estilos que se aplicarán en pantallas de hasta 480px */
+    /* Realiza cambios más drásticos para adaptar el diseño a pantallas muy pequeñas */
+    .sidebar {
+      display: none; /* Por ejemplo, podrías ocultar completamente el sidebar */
+    }
+    
+    /* Otros ajustes necesarios */
+  }
+  
+/* Estilos base */
+/* Define los estilos que se aplicarán por defecto */
+
+/* Foto de perfil */
+.circle img {
+    width: 200px; /* Establece el tamaño de la imagen */
+    height: 200px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+  }
+  
+  /* Contenedor principal */
+  #container {
+    max-width: 800px; /* Limita el ancho del contenedor principal */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Añade un espacio alrededor del contenido */
+  }
+  
+  /* Media Queries para dispositivos más pequeños */
+  @media screen and (max-width: 600px) {
+    /* Cambios específicos para pantallas de hasta 600px de ancho */
+    .circle img {
+      width: 150px; /* Reducir el tamaño de la imagen para dispositivos más pequeños */
+      height: 150px;
+    }
+  
+    #container {
+      max-width: 90%; /* Ajusta el ancho del contenedor para pantallas más pequeñas */
+      padding: 10px; /* Reduce el espacio alrededor del contenido */
+    }
+  }
+  

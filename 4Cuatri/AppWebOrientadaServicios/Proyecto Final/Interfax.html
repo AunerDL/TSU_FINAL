@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+
+    <style type="text/css">
+        /* Estilos generales aquí */
+
+        @media print {
+            body * {
+                visibility: visible !important;
+            }
+
+            body {
+                background-color: white;
+            }
+
+            #datosContainer {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            #datosAdicionales,
+            #datosNoTabla {
+                display: block !important;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            #datosNoTabla table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            #datosNoTabla th,
+            #datosNoTabla td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+            }
+
+            #datosNoTabla th {
+                background-color: #f2f2f2;
+                color: #333;
+            }
+
+            #datosNoTabla td {
+                background-color: #f8f8f8;
+                color: #333;
+            }
+
+            /* Ocultar elementos específicos al imprimir */
+            #formBuscarPersona,
+            #btnImprimir {
+                display: none;
+            }
+        }
+    </style>
+
+    <style type="text/css">
+        /* Estilos generales aquí */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Estilos específicos para impresión */
+        @media print {
+            body * {
+                visibility: visible !important;
+            }
+
+            body {
+                background-color: white;
+            }
+
+            header,
+            footer {
+                display: none;
+            }
+
+            #datosContainer {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            #datosAdicionales,
+            #datosNoTabla {
+                display: block !important;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            #datosNoTabla table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            #datosNoTabla th,
+            #datosNoTabla td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+            }
+
+            #datosNoTabla th {
+                background-color: #f2f2f2;
+                color: #333;
+            }
+
+            #datosNoTabla td {
+                background-color: #f8f8f8;
+                color: #333;
+            }
+
+            /* Ocultar elementos específicos al imprimir */
+            #formBuscarPersona,
+            #btnImprimir {
+                display: none;
+            }
+        }
+    </style>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Estilo para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Estilo para los botones */
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo específico para el botón "Imprimir" */
+        #btnImprimir {
+            background-color: #28a745;
+        }
+
+        #btnImprimir:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Datos de Persona</h1>
+    </header>
+
+    <main>
+        <!-- Formulario para ingresar el ID de la persona -->
+        <form id="formBuscarPersona">
+            <label for="inputIdPersona">ID de Persona:</label>
+            <input type="text" id="inputIdPersona" name="idPersona" required>
+            <button type="button" onclick="buscarPersona()">Buscar</button>
+        </form>
+
+        <button id="btnImprimir">Imprimir</button>
+
+        <!-- Contenedor adicional para información adicional -->
+        <div id="datosAdicionales"></div>
+
+        <!-- Contenedor para los datos sin formato de tablas -->
+        <div id="datosNoTabla"></div>
+
+        <!-- Contenedor para la tabla de direcciones -->
+        <div id="datosContainer">
+            <!-- Aquí se mostrarán los datos en forma de tabla -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Tecnologica Tula-Tepeji</p>
+    </footer>
+
+    <script src="Js/script.js"></script>
+</body>
+
+</html>

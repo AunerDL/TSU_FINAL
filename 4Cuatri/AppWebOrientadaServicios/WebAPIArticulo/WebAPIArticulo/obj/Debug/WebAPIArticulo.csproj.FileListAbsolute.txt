@@ -1,0 +1,2 @@
+C:\Users\gabod\source\repos\WebAPIArticulo\WebAPIArticulo\obj\Debug\WebAPIArticulo.csproj.AssemblyReference.cache
+C:\Users\gabod\source\repos\WebAPIArticulo\WebAPIArticulo\obj\Debug\WebAPIArticulo.csproj.CoreCompileInputs.cache

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="287dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="@string/txtNombre"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDatos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="164dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/txtDatos"
+        android:inputType="textMultiLine"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="118dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="302dp"
+        android:hint="@string/btnGuardar"
+        android:onClick="Guardar"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatos" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="121dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="300dp"
+        android:hint="@string/btnBuscar"
+        android:onClick="Buscar"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
